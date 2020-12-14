@@ -63,7 +63,7 @@ def game_on():
 
         # detect collision with tail
         for segment in snake.segments[1:]:
-            if snake.head.distance(segment) <= 10:
+            if snake.head.distance(segment) <= 5:
                 game_over = True
 
     screen.update()
